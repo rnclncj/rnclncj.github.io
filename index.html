@@ -1,68 +1,159 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Michelle Ding's Homepage</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="imgblock"><img src="imgs/me.jpg" alt="Michelle Ding">Photo taken in Shinjuku, Tokyo.</div>
-            <h1>Michelle Ding's Homepage</h1>
-            <p>I am a CS PhD student at the University of Texas at Austin where I am fortunate to be advised by Scott Aaronson. I am generously supported by a Texas Quantum Institute Fellowship for the 2026-2028 academic year.</p> 
-            <p>Before that I studied Mathematics and Computer Science from 2021-2025 at the same institution under the Turing Scholars Honors Program.</p>
-            <p></p>
-            <a href="docs/MichelleDingCV.pdf">Curriculum Vitae</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michelle Ding</title>
+    <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Serif+4:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="profile">
+            <figure>
+                <div class="profile-photo-wrap" tabindex="0">
+                    <img class="profile-photo" src="imgs/me2.jpg" alt="Michelle Ding">
+                    <div class="profile-caption">Photo taken by my amazing boyfriend <span class="person-link"><a href="https://victorwang37.github.io">Victor Wang</a></span> in Hokkaido, Japan!</div>
+                </div>
+                <h1>Michelle Ding</h1>
+                <h2 style="text-align: center;">CS PhD student · UT Austin</h2>
+                <nav class="profile-links" aria-label="Professional profiles">
+                    <a href="docs/MichelleDingCV.pdf">CV</a> · 
+                    <a href="https://scholar.google.com/citations?user=0yEWf4kAAAAJ">Scholar</a> · 
+                    <a href="https://www.linkedin.com/in/michelleding01/">LinkedIn</a>
+                </nav>
+            </figure>
+            <!-- 
+            <figure class="research-image optics-image">
+                <img src="imgs/MichelleDingopticsresults.jpg" alt="Quantum optics calibration attempt">
+                <figcaption>Batman-like quantum optics calibration attempt</figcaption>
+            </figure>
+            <figure class="research-image chsh-image">
+                <img src="imgs/MichelleDingchsh3bases.png" alt="CHSH simulation results for three bases">
+                <figcaption>CHSH simulation results for 3 bases</figcaption>
+            </figure> -->
+        </aside>
 
-            <hr>
+        <header class="intro">
+            <h1>Welcome!</h1>
+            <p>I am a second-year CS PhD student at the University of Texas at Austin where I am fortunate to be advised by <span class="person-link"><a href="https://scottaaronson.com/">Scott Aaronson</a></span>. I am broadly interested in quantum algorithms and complexity, especially algorithms for verifiable quantum advantage.</p>
+            <p>Previously, I studied Mathematics and Computer Science from 2021-2025 at the same institution under the Turing Scholars Honors Program.</p>
+            <p> I am generously supported by a Texas Quantum Institute Fellowship for the 2026-2028 academic years.</p>
+        
             
-            <h2>Graduate Research</h2>
+        </header>
 
-            <h3><span>Sep 2026: </span><span>Ryan Anselm, MD, Dar Gilboa, Sabee Grewal. </span>Optimal and Verifiable Quantum Advantages in Communication Complexity</h3>
-            <a href="https://arxiv.org/abs/2610.05585">arXiv:2610.05585</a>
+        <main class="research">
+            <section aria-labelledby="graduate-heading">
+                <h2 id="graduate-heading">Graduate Research</h2>
+                <article class="publication">
+                    <time datetime="2026-09">Sep 2026</time>
+                    <div>
+                        <h3>Optimal and Verifiable Quantum Advantages in Communication Complexity</h3>
+                        <p class="authors"> 
+                            <a href="https://ryananselm.com/">Ryan Anselm</a>, 
+                            MD, 
+                            <a href="https://scholar.google.com/citations?user=L_BI2KkAAAAJ">Dar Gilboa</a>, 
+                            <a href="https://sabeegrewal.com/">Sabee Grewal</a>
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2610.05585">arXiv:2610.05585</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
 
-            
-            <hr>
-            <h2>Undergraduate Research</h2>
-            
-            <div class="imgblock"><img src="imgs/MichelleDingopticsresults.jpg">Batman-like quantum optics calibration attempt</div>
-            
-            <h3><span>April 2025: </span> Undergraduate Honors Thesis: Peaked Boson Sampling: towards efficiently verifiable and NISQ-able quantum advantage</h3>
-            <a href="docs/MichelleDingUndergraduateHonorsThesis.pdf">Thesis</a>
-            <a href="docs/MichelleDingUndergraduateHonorsThesisPoster.pdf">Poster</a>
-            <a href="docs/MichelleDingUndergraduateHonorsThesisSlides.pdf">Slides</a>	    
-            <a href="https://github.com/michelled01/Peaked-circuits">Code</a> <h3 style="color:SteelBlue">(Best poster award)</h3>
-            <div></div>
+            <section aria-labelledby="undergraduate-heading">
+                <h2 id="undergraduate-heading">Undergraduate Research</h2>
+                <article class="publication">
+                    <time datetime="2025-04">April 2025</time>
+                    <div>
+                        <h3>Peaked Boson Sampling: towards efficiently verifiable and NISQ-able quantum advantage</h3>
+                        <p class="authors">Undergraduate Honors Thesis</p>
+                        <div class="publication-links">
+                            <a href="docs/MichelleDingUndergraduateHonorsThesis.pdf">Thesis</a>
+                            <a href="docs/MichelleDingUndergraduateHonorsThesisPoster.pdf">Poster</a>
+                            <a href="docs/MichelleDingUndergraduateHonorsThesisSlides.pdf">Slides</a>
+                            <a href="https://github.com/michelled01/Peaked-circuits">Code</a>
+                            <p class="award">(Best UT poster award)</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="publication">
+                    <time datetime="2024-06">Jun 2024</time>
+                    <div>
+                        <h3>PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition</h3>
+                       <p class="authors"> 
+                            <a href="https://georgetsoukalas.github.io/">George Tsoukalas</a>, 
+                            <a href="https://leejasper851.github.io/">Jasper Lee</a>, 
+                            <a href="https://www.linkedin.com/in/john-edward-jennings/">John Jennings</a>, 
+                            <a href="https://jxin31415.github.io/">Jimmy Xin</a>, 
+                            MD, 
+                            <a href="https://www.linkedin.com/in/michael-henry-jennings/">Michael Jennings</a>, 
+                            <a href="https://iamthakur.com/aboutme/">Amitayush Thakur</a>, 
+                            <a href="https://scholar.google.com/citations?user=9j6RBYQAAAAJ">Swarat Chaudhuri</a> 
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/1582eaf9e0cf349e1e5a6ee453100aa1-Abstract-Datasets_and_Benchmarks_Track.html">NeurIPS 2024</a>
+                            <a href="https://sites.google.com/view/ai4mathworkshopicml2024/awards?authuser=0">ICML 2024</a>
+                            <a href="https://github.com/trishullab/PutnamBench">Code</a>
+                            <p class="award">(Best paper award)</p>
+                        </div>
+                        
+                    </div>
+                </article>
+            </section>
 
-            <h3><span>Jun 2024: </span> <span>George Tsoukalas, Jasper Lee, John Jennings, Jimmy Xin, MD, Michael Jennings, Amitayush Thakur, Swarat Chaudhuri. </span>PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition</h3>
-            <!-- <a href="https://arxiv.org/abs/2407.11214">arXiv:2407.11214</a> -->
-            <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/1582eaf9e0cf349e1e5a6ee453100aa1-Abstract-Datasets_and_Benchmarks_Track.html">NeurIPS 2024</a>
+            <section aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <article class="publication">
+                    <time datetime="2024-04">Apr 2024</time>
+                    <div>
+                        <h3>Formal Verification of QEC</h3>
+                        <p class="authors">
+                            <a href="https://www.linkedin.com/in/neilallavarpu/">Neil Allavarpu</a>, 
+                            MD, 
+                            <a href="https://www.linkedin.com/in/aadarsh-narayan-a8722a24a/">Aadarsh Narayan</a>
+                        </p>
+                        <div class="publication-links">
+                            <a href="docs/MichelleDingQEC.pdf">Manuscript</a>
+                            <a href="https://github.com/michelled01/PL-final-project/tree/main">Code</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="publication">
+                    <time datetime="2023-12">Dec 2023</time>
+                    <div>
+                        <h3>IFML Retrieval Augmented Generation Models</h3>
+                        <p class="authors">
+                            MD, 
+                            <a href="https://www.linkedin.com/in/luke-lu-25145723a/">Yuan Lu</a>, 
+                            <a href="https://whorley.co/">J Whorley</a>, 
+                            <a href="https://people.eecs.berkeley.edu/~alexdimakis/">Alexandros G. Dimakis</a>, 
+                            <a href="https://scholar.google.com/citations?user=UD87zMYAAAAJ">Adam Klivans</a>
+                        </p>
+                        <div class="publication-links">
+                            <a href="docs/MichelleDingRAG.pdf">Manuscript</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="publication">
+                    <time datetime="2022-06">Jun 2022</time>
+                    <div>
+                        <h3>Quantum State Tomography Experiments on PBS</h3>
+                        <div class="publication-links">
+                            <a href="imgs/MichelleDingFRIposter.jpg">Poster</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
 
-            <a href='https://sites.google.com/view/ai4mathworkshopicml2024/awards?authuser=0'>ICML 2024</a> 
-            <a href="https://github.com/trishullab/PutnamBench">Code</a>
-            <h3 style="color:SteelBlue">(Best paper award)</h3>
-            <div></div>
-            <hr>
-
-            <h2>Projects</h2>
-
-            <h3><span>Apr 2024: </span> <span></span> Formal Verification of QEC</h3>
-            <a href="docs/MichelleDingQEC.pdf">Manuscript</a>
-            <a href="https://github.com/michelled01/PL-final-project/tree/main">Code</a>
-            <div></div>
-
-            <h3><span>Dec 2023: </span> <span></span> IFML Retrieval Augmented Generation Models</h3>
-            <a href="docs/MichelleDingRAG.pdf">Manuscript</a>
-            <div></div>
-
-            <h3><span>Jun 2022: </span>Quantum State Tomography Experiments on PBS</h3>
-            <a href="imgs/MichelleDingFRIposter.jpg">Poster</a>
-            <div></div>
-            
-            <div class="imgblock"><img src="imgs/MichelleDingchsh3bases.png">CHSH simulation results for 3 bases</div>
-            <br> <br> <br>
-            
-            
-            <hr style="margin-top:210px;">
-            <div style="margin-bottom:200px; color: lightgrey">Last update: Oct 2026 <br>Website adapted from<a href="https://www.patrickrall.com/" style="margin-bottom: none;padding:none;text-decoration:underline;color:lightgrey;background:none;">Patrick Rall</a></div>
-
-        </div> 
-    </body>
+        <footer>
+            <p class="email">Email: michelle [dot] ding01 [at] utexas [dot] edu</p>
+            <p class="last-update">Last update: Oct 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
